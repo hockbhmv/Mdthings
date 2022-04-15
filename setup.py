@@ -1,6 +1,13 @@
 import os 
 import setuptools 
 
+def requirements(file="requirements.txt"):
+    if os.path.isfile(file):
+        with open(file, encoding="utf-8") as r:
+            return [i.strip() for i in r]
+    else:
+        return []
+    
 def readme(file="README.md"):
     if os.path.isfile(file):
         with open(file, encoding="utf-8") as r:
@@ -11,7 +18,7 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="Mdthings",
-    version="0.0.4",
+    version="0.0.6",
     description="my requirements",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -32,5 +39,6 @@ setuptools.setup(
     python_requires=">=3.6",
     py_modules=['Mdmovies'],
     packages=setuptools.find_packages(),
+    install_requires=requirements(),
     zip_safe=False
 )
