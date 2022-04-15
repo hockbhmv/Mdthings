@@ -18,7 +18,7 @@ def readme(file="README.md"):
 
 
 setuptools.setup(
-    name="things",
+    name="Mdthings",
     version="0.0.1",
     description="my requirements",
     long_description=readme(),
@@ -33,11 +33,11 @@ setuptools.setup(
         "Operating System :: OS Independent"
     ],
     project_urls={
-        "Tracker": "https://github.com/hockbhmv/things/issues",
-        "Source": "https://github.com/hockbhmv/things"
+        "Tracker": "https://github.com/hockbhmv/Mdthings/issues",
+        "Source": "https://github.com/hockbhmv/Mdthings"
     },
+    url="https://github.com/hockbhmv/Mdthings"
     python_requires=">=3.6",
-    py_modules=['mdmovies'],
     packages=setuptools.find_packages(),
     zip_safe=False,
     install_requires=requirements()
