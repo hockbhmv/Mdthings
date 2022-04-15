@@ -19,7 +19,7 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="Mdthings",
-    version="0.0.1",
+    version="0.0.2",
     description="my requirements",
     long_description=readme(),
     long_description_content_type="text/markdown",
