@@ -28,9 +28,9 @@ setuptools.setup(
         "Tracker": "https://github.com/hockbhmv/Mdthings/issues",
         "Source": "https://github.com/hockbhmv/Mdthings"
     },
-    url="https://github.com/hockbhmv/Mdthings"
+    url="https://github.com/hockbhmv/Mdthings",
     python_requires=">=3.6",
-    py_modules=['Mdmovies']
+    py_modules=['Mdmovies'],
     packages=setuptools.find_packages(),
-    zip_safe=False,
+    zip_safe=False
 )
